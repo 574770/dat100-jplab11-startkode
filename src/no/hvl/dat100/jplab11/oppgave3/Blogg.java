@@ -88,8 +88,15 @@ public class Blogg {
 	}
 	
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		String innlegg = nesteLedig + "\n";
+		for (Innlegg element : innleggtabell) {
+			innlegg += element.toString();
+		}
+		return innlegg;
+		
 	}
+	
 
 	// valgfrie oppgaver nedenfor
 	
